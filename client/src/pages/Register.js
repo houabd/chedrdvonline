@@ -7,7 +7,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   //form handler
-  const onfinishHandler = async (values) => {
+  const onfinishHandler = async (values) => {a
     try {
       const res = await axios.post("/api/v1/user/register", values);
       if (res.data.success) {
